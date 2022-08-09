@@ -7,6 +7,18 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/garciaeury26/Hiper-Product-Card",
+    "type": "git"
+  },
+  "homepage": "https://portafolio-blush-gamma.vercel.app/",
+  "keywords": [
+    "Hiper-Product-Card",
+    "Card",
+    "shoping",
+    "Joel",
+    "Eury"
+  ],
   "engines": {
     "node": ">=10"
   },
@@ -17,7 +29,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "test:watch": "tsdx test --watch"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -47,17 +60,33 @@
     }
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
     "@rollup/plugin-image": "^2.1.1",
-    "@types/react": "^18.0.16",
+    "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "babel-jest": "^28.1.3",
     "husky": "^8.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.3",
     "postcss": "^8.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^8.0.0",
     "tsdx": "^0.13.3",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@size-limit/preset-small-lib": "^8.0.0",
+    "@types/react-test-renderer": "^18.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   }
 }

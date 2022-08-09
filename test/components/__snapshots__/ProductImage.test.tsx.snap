@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente ProductImage Deve mostar el componente con la imagem personalisada 1`] = `
+<img
+  alt="product img"
+  className="productImg undefined"
+  src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg"
+/>
+`;
+
+exports[`Pruebas en el componente ProductImage Deve mostrar el componente Correctamente 1`] = `
+<div
+  className="productCard undefined"
+>
+  <img
+    alt="product img"
+    className="productImg undefined"
+    src="/coffee-mug.png"
+  />
+</div>
+`;
