@@ -15,3 +15,5 @@ declare module "*.jpg" {
 }
 ```
 ***Recureda poner dentro de la carpeta src***
+
+* git tag -a v0.0.1 -m "" => este me perimite describi la version
